@@ -28,22 +28,21 @@
 
 ​    在不知所措中度过大一，成为16届的学长之后，感觉并没有比这一届新生有强出多少。新转专业过来的我，仍然还有太多的未知，太多的新鲜感。第一次去鉴四，第一次课外的培训，第一次在课余时间有了一个那么明确的目标，一件那么想要完成的事。当然还有在回家的车上写的我的第一篇博客。
 9.25 静态博客的搭建收获​    第一次的课">
-<meta property="og:image" content="http://static.open-open.com/lib/uploadImg/20150620/20150620203424_361.png">
-<meta property="og:image" content="http://yoursite.com/D:\Workshop\Git\blog\source\image\git.jpg">
+<meta property="og:image" content="http://yoursite.com/D:\Workshop\Git\blog\source\_posts\img\git.jpg">
 <meta property="og:image" content="http://yoursite.com/C:\Users\zys\Pictures\QQ浏览器截图\QQ浏览器截图_20161005092547_DDD9F951B7F04bcaB8976EDAF06E46E6.jpg">
 <meta property="og:image" content="http://yoursite.com/C:\Users\zys\Pictures\QQ浏览器截图\QQ浏览器截图_20161005092838_FCA168C7CA104fc392570513B9167BAA.jpg">
 <meta property="og:image" content="http://yoursite.com/C:\Users\zys\Pictures\QQ浏览器截图\QQ浏览器截图_20161005033307_D842540C6C5C45bfA5D0FA8DBBDA92C4.jpg">
 <meta property="og:image" content="http://yoursite.com/C:\Users\zys\Pictures\QQ浏览器截图\QQ浏览器截图_20161005033328_C26EC750517041098765E76C942EED9A.jpg">
 <meta property="og:image" content="http://yoursite.com/C:\Users\zys\Pictures\QQ浏览器截图\QQ浏览器截图_20161005033405_5A142B3A39A24f508D4CCF4FB7AEC8DB.jpg">
 <meta property="og:image" content="http://yoursite.com/C:\Users\zys\Pictures\QQ浏览器截图\QQ浏览器截图_20161005034628_8BCF68613A284e3294897935AB22BE37.jpg">
-<meta property="og:updated_time" content="2016-11-07T12:21:58.813Z">
+<meta property="og:updated_time" content="2016-11-07T13:02:24.860Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Workshop-c1 | 尘垢">
 <meta name="twitter:description" content="只要你勇敢去试一下，你就会发现有些事情比如编程并没有你想象的那么难。
 
 ​    在不知所措中度过大一，成为16届的学长之后，感觉并没有比这一届新生有强出多少。新转专业过来的我，仍然还有太多的未知，太多的新鲜感。第一次去鉴四，第一次课外的培训，第一次在课余时间有了一个那么明确的目标，一件那么想要完成的事。当然还有在回家的车上写的我的第一篇博客。
 9.25 静态博客的搭建收获​    第一次的课">
-<meta name="twitter:image" content="http://static.open-open.com/lib/uploadImg/20150620/20150620203424_361.png">
+<meta name="twitter:image" content="http://yoursite.com/D:\Workshop\Git\blog\source\_posts\img\git.jpg">
     
     
     
@@ -250,14 +249,13 @@ classes that you can use:
 <p>   命令将版本退回到上一个版本</p>
 <h4 id="远程仓库的克隆和提交"><a href="#远程仓库的克隆和提交" class="headerlink" title="远程仓库的克隆和提交"></a>远程仓库的克隆和提交</h4><p>   Git不仅可在一个仓库中管理文件历史，更可以将同一个Git仓库，分布到不同的机器上。在有一台电脑充当服务器的前提下，每个人都可以从这台服务器上克隆仓库并且推送自己的提交。</p>
 <p>   而Github就是一个提供git仓库托管服务的网站。可以从Github获得Git远程仓库。但是本地Git仓库和远程仓库之间的传输是通过SSH加密的，我们需要在git中制定Githb账号和用户名生成SSH公钥和密钥，用SSH登陆。</p>
-<h5 id="注册Github账号"><a href="#注册Github账号" class="headerlink" title="注册Github账号"></a>注册Github账号</h5><h5 id="SSH-KEY"><a href="#SSH-KEY" class="headerlink" title="SSH KEY"></a>SSH KEY</h5>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;youremail@example.come&quot;</div></pre></td></tr></table></figure>
+<h5 id="注册Github账号"><a href="#注册Github账号" class="headerlink" title="注册Github账号"></a>注册Github账号</h5><p><img src="" alt=""></p>
+<h5 id="SSH-KEY"><a href="#SSH-KEY" class="headerlink" title="SSH KEY"></a>SSH KEY</h5>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;youremail@example.come&quot;</div></pre></td></tr></table></figure>
 <p>   生成ssh密钥和公钥，将公钥文件打开将其中的内容复制到github账号的ssh key中。</p>
-<h5 id="在github上创建一个仓库hellogit"><a href="#在github上创建一个仓库hellogit" class="headerlink" title="在github上创建一个仓库hellogit"></a>在github上创建一个仓库hellogit</h5><p><img src="http://static.open-open.com/lib/uploadImg/20150620/20150620203424_361.png" alt=""></p>
-<p><img src="D:\Workshop\Git\blog\source\image\git.jpg" alt="git"></p>
-<h5 id="使用git-for-windows将远程仓库克隆到本地"><a href="#使用git-for-windows将远程仓库克隆到本地" class="headerlink" title="使用git for windows将远程仓库克隆到本地"></a>使用git for windows将远程仓库克隆到本地</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone git@github.com:username/hellogit.git</div></pre></td></tr></table></figure>
+<h5 id="在github上创建一个仓库hellogit"><a href="#在github上创建一个仓库hellogit" class="headerlink" title="在github上创建一个仓库hellogit"></a>在github上创建一个仓库hellogit</h5><h5 id="使用git-for-windows将远程仓库克隆到本地"><a href="#使用git-for-windows将远程仓库克隆到本地" class="headerlink" title="使用git for windows将远程仓库克隆到本地"></a>使用git for windows将远程仓库克隆到本地</h5><p> <img src="D:\Workshop\Git\blog\source\_posts\img\git.jpg" alt="git"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone git@github.com:username/hellogit.git</div></pre></td></tr></table></figure>
 <h5 id="在本地仓库添加一个test-txt文件"><a href="#在本地仓库添加一个test-txt文件" class="headerlink" title="在本地仓库添加一个test.txt文件"></a>在本地仓库添加一个test.txt文件</h5><p> <img src="C:\Users\zys\Pictures\QQ浏览器截图\QQ浏览器截图_20161005092547_DDD9F951B7F04bcaB8976EDAF06E46E6.jpg" alt="QQ浏览器截图_20161005092547_DDD9F951B7F04bcaB8976EDAF06E46E6"></p>
-<p>​#####  将本地的修改commit到Github</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git remote add origin git @github.com:username/local_repository</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
+<h5 id="将本地的修改commit到Github"><a href="#将本地的修改commit到Github" class="headerlink" title="将本地的修改commit到Github"></a>将本地的修改commit到Github</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git remote add origin git @github.com:username/local_repository</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
 <h5 id="在Github查看是否成功"><a href="#在Github查看是否成功" class="headerlink" title="在Github查看是否成功"></a>在Github查看是否成功</h5><p> <img src="C:\Users\zys\Pictures\QQ浏览器截图\QQ浏览器截图_20161005092838_FCA168C7CA104fc392570513B9167BAA.jpg" alt="QQ浏览器截图_20161005092838_FCA168C7CA104fc392570513B9167BAA"></p>
 <h4 id="hexo静态博客的搭建"><a href="#hexo静态博客的搭建" class="headerlink" title="hexo静态博客的搭建"></a>hexo静态博客的搭建</h4><h5 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h5><h5 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h5><p>打开Git命令行，执行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure>
